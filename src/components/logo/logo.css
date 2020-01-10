@@ -1,0 +1,17 @@
+.logo {
+    --background-color: var(--color-brand);
+
+    background-color: var(--color-brand);
+    color: var(--color-primary);
+    display: inline-block;
+    font-weight: 800;
+    padding: .6rem 2rem;
+}
+
+.logo-accent {
+    --background-color: var(--color-accent);
+}
+
+.logo-primary {
+    --background-color: var(--color-primary);
+}

@@ -1,0 +1,185 @@
+/**
+ * Modern CSS Reset - written by Andy Bell
+ * Adapted by Chris Galbraith
+ */
+
+
+/* Font */
+@font-face {
+    font-family: 'CircularStd';
+    src: url('fonts/CircularStd-Black.eot');
+    src: url('fonts/CircularStd-Black.eot?#iefix') format('embedded-opentype'), url('fonts/CircularStd-Black.woff') format('woff'), url('fonts/CircularStd-Black.ttf') format('truetype'), url('fonts/CircularStd-Black.svg#bcc26993292869431e54c666aafa8fcd') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url('fonts/CircularStd-BlackItalic.eot');
+    src: url('fonts/CircularStd-BlackItalic.eot?#iefix') format('embedded-opentype'), url('fonts/CircularStd-BlackItalic.woff') format('woff'), url('fonts/CircularStd-BlackItalic.ttf') format('truetype'), url('fonts/CircularStd-BlackItalic.svg#bcc26993292869431e54c666aafa8fcd') format('svg');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url('fonts/CircularStd-Bold.eot');
+    src: url('fonts/CircularStd-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/CircularStd-Bold.woff') format('woff'), url('fonts/CircularStd-Bold.ttf') format('truetype'), url('fonts/CircularStd-Bold.svg#bcc26993292869431e54c666aafa8fcd') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url('fonts/CircularStd-BoldItalic.eot');
+    src: url('fonts/CircularStd-BoldItalic.eot?#iefix') format('embedded-opentype'), url('fonts/CircularStd-BoldItalic.woff') format('woff'), url('fonts/CircularStd-BoldItalic.ttf') format('truetype'), url('fonts/CircularStd-BoldItalic.svg#bcc26993292869431e54c666aafa8fcd') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url('fonts/CircularStd-Medium.eot');
+    src: url('fonts/CircularStd-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/CircularStd-Medium.woff') format('woff'), url('fonts/CircularStd-Medium.ttf') format('truetype'), url('fonts/CircularStd-Medium.svg#bcc26993292869431e54c666aafa8fcd') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url('fonts/CircularStd-MediumItalic.eot');
+    src: url('fonts/CircularStd-MediumItalic.eot?#iefix') format('embedded-opentype'), url('fonts/CircularStd-MediumItalic.woff') format('woff'), url('fonts/CircularStd-MediumItalic.ttf') format('truetype'), url('fonts/CircularStd-MediumItalic.svg#bcc26993292869431e54c666aafa8fcd') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url('fonts/CircularStd-Book.eot');
+    src: url('fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'), url('fonts/CircularStd-Book.woff') format('woff'), url('fonts/CircularStd-Book.ttf') format('truetype'), url('fonts/CircularStd-Book.svg#bcc26993292869431e54c666aafa8fcd') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url('fonts/CircularStd-BookItalic.eot');
+    src: url('fonts/CircularStd-BookItalic.eot?#iefix') format('embedded-opentype'), url('fonts/CircularStd-BookItalic.woff') format('woff'), url('fonts/CircularStd-BookItalic.ttf') format('truetype'), url('fonts/CircularStd-BookItalic.svg#bcc26993292869431e54c666aafa8fcd') format('svg');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Variables */
+:root {
+    --color-brand: #19D67D;
+    --color-accent: #E81779;
+    --color-primary: #15151A;
+
+    --font-size: 1.8rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* Set core body defaults */
+body {
+    color: var(--color-primary, #000);
+    font-family: "CircularStd", sans-serif;
+    font-size: var(--font-size);
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Remove text decoration on links with a class */
+a[class] {
+    text-decoration: none;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+    margin-block-start: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
