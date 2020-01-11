@@ -79,9 +79,13 @@
 
 /* Variables */
 :root {
-    --color-brand: #19D67D;
-    --color-accent: #E81779;
-    --color-primary: #15151A;
+    --color-brand-rgb: 25,214,125;
+    --color-accent-rgb: 232,23,121;
+    --color-primary-rgb: 21,21,26;
+
+    --color-brand: rgb(var(--color-brand-rgb));
+    --color-accent: rgb(var(--color-accent-rgb));;
+    --color-primary: rgb(var(--color-primary-rgb));;
 
     --font-size: 1.8rem;
 }
@@ -172,6 +176,7 @@ h2,
 h3,
 h4 {
     margin: 0;
+    font-weight: 800;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */

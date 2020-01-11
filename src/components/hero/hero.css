@@ -1,0 +1,30 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 50rem;
+}
+
+.hero-image,
+.hero-content {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.hero-image > .gatsby-image-wrapper {
+    height: 100%;
+}
+
+.hero-content {
+    background-color: rgba(var(--color-primary-rgb), .75);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+}
+
+.hero-title {
+    color: var(--color-brand);
+    font-size: 2em;
+}

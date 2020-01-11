@@ -15,3 +15,10 @@
 .logo-primary {
     --background-color: var(--color-primary);
 }
+
+.logo.is-floating {
+    position: absolute;
+    left: 2.8rem;
+    top: 0;
+    z-index: 100;
+}

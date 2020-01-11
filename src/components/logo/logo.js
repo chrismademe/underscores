@@ -4,18 +4,21 @@ import { Link } from "gatsby"
 
 import "./logo.css"
 
-const Logo = ({ color }) => {
+const Logo = ({ color, floating }) => {
+    let isFloating = floating && `is-floating`
     return (
-        <Link className={`logo logo-${color}`} to="/">CG</Link>
+        <Link className={`logo logo-${color} ${isFloating}`} to="/">CG</Link>
     )
 }
 
 Logo.defaultProps = {
-    color: `brand`
+    color: `brand`,
+    floating: true
 }
 
 Logo.propTypes = {
-    color: PropTypes.string
+    color: PropTypes.string,
+    floating: PropTypes.bool
 }
 
 export default Logo
